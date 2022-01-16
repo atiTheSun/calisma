@@ -40,6 +40,8 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["tr", "en"],
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["DefType", "DefItem", "DefKitap"],
+    "lastLiquibaseTimestamp": 1642339625000
   }
 }

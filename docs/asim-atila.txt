@@ -15,8 +15,8 @@ oracle=
     (CONNECT_DATA = (SERVER=DEDICATED)
       (SERVICE_NAME = ORCLCDB.localdomain)
     )
-  ) 
-  
+  )
+
 
 sqlplus sys/Oradoc_db1@ORCLCDB as sysdba
 
@@ -45,18 +45,14 @@ SQL> select con_id, dbid, name,open_mode  from V$PDBS;
          2  874739485 PDB$SEED                                                                         READ ONLY
          3  970051837 ORCLPDB1                                                                         READ WRITE
 
-SQL> 
+SQL>
 SQL> create user c##atila
   2    identified by atila;
 
 User created
 
-
-
-
-
 https://redis.com/redis-enterprise/redis-insight/
 
 
-
-
+calisma.jdl eklendi
+jhipster jdl calisma.jdl  komut setinden calistirdik

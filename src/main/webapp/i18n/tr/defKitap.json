@@ -1,0 +1,25 @@
+{
+  "startpointApp": {
+    "defKitap": {
+      "home": {
+        "title": "Def Kitaps",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Def Kitap",
+        "createOrEditLabel": "Create or edit a Def Kitap",
+        "notFound": "No Def Kitaps found"
+      },
+      "created": "A new Def Kitap is created with identifier {{ param }}",
+      "updated": "A Def Kitap is updated with identifier {{ param }}",
+      "deleted": "A Def Kitap is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Def Kitap {{ id }}?"
+      },
+      "detail": {
+        "title": "Def Kitap"
+      },
+      "id": "ID",
+      "isbn": "Isbn",
+      "kitapAdi": "Kitap Adi"
+    }
+  }
+}

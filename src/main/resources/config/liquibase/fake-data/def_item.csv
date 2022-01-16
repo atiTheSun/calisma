@@ -1,0 +1,10 @@
+id;code;name;type_id;parent_id
+
+bd96a06f-9b95-4f72-9375-58fb1fdf081d;K;Kırmızı;TIP;
+596c8632-91d4-4bf7-8ad6-803bed53feaa;S;Sarı;TIP;
+7a2af117-e6ee-4aee-bd63-6fc28f8937ab;M;Mavi;TIP;
+
+db0c0535-cfac-4fef-b21c-bc510275bf89;1;1-Varlik;HESAP;
+5ae131d8-8602-449f-af20-e52ed4f6f842;2;2-Sorlumluluk;HESAP;
+829b43d2-28d8-48b8-8401-775c1c30c457;1.1;1.1-Nakit;HESAP;db0c0535-cfac-4fef-b21c-bc510275bf89
+b97db1e7-5e19-4d02-99ad-a0d78c2dc002;1.2;1.2-Çek;HESAP;db0c0535-cfac-4fef-b21c-bc510275bf89

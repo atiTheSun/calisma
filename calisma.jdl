@@ -1,0 +1,28 @@
+entity DefType {
+    id String required maxlength(10),
+	name String required maxlength(200)
+}
+
+entity DefItem {
+	id UUID,
+    code String required maxlength(20),
+    name String required maxlength(200)
+}
+
+entity DefKitap {
+	isbn String required maxlength(20),
+    kitapAdi String required maxlength(200)
+}
+
+relationship ManyToOne {
+    DefItem{type(id) required} to DefType,
+    DefItem{parent(code)} to DefItem
+}
+
+service all with serviceImpl
+dto all with mapstruct
+
+/**
+https://start.jhipster.tech/jdl-studio/
+jhipster jdl jbase.jdl
+*/
