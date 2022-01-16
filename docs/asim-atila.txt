@@ -1,0 +1,62 @@
+https://www.jhipster.tech/jdl-studio/		innova/innova123
+
+docker pull store/oracle/database-enterprise:12.2.0.1
+docker pull redis
+
+
+
+
+tnsnames ayari;
+oracle=
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    )
+    (CONNECT_DATA = (SERVER=DEDICATED)
+      (SERVICE_NAME = ORCLCDB.localdomain)
+    )
+  ) 
+  
+
+sqlplus sys/Oradoc_db1@ORCLCDB as sysdba
+
+
+
+user olusturmada hata almakta. asagidaki zimbirti ile cozumu var
+
+http://www.kamilturkyilmaz.com/2016/03/11/ora-65096-invalid-common-user-or-role-name/
+
+
+
+SQL> SELECT NAME, PDB FROM V$SERVICES   ORDER BY PDB, NAME;
+
+NAME                                                             PDB
+---------------------------------------------------------------- --------------------------------------------------------------------------------
+ORCLCDB.localdomain                                              CDB$ROOT
+ORCLCDBXDB                                                       CDB$ROOT
+SYS$BACKGROUND                                                   CDB$ROOT
+SYS$USERS                                                        CDB$ROOT
+orclpdb1.localdomain                                             ORCLPDB1
+
+SQL> select con_id, dbid, name,open_mode  from V$PDBS;
+
+    CON_ID       DBID NAME                                                                             OPEN_MODE
+---------- ---------- -------------------------------------------------------------------------------- ----------
+         2  874739485 PDB$SEED                                                                         READ ONLY
+         3  970051837 ORCLPDB1                                                                         READ WRITE
+
+SQL> 
+SQL> create user c##atila
+  2    identified by atila;
+
+User created
+
+
+
+
+
+https://redis.com/redis-enterprise/redis-insight/
+
+
+
+
