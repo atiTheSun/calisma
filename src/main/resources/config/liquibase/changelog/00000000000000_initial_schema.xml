@@ -13,7 +13,7 @@
     -->
     <changeSet id="00000000000001" author="jhipster">
         <createTable tableName="jhi_user">
-            <column name="id" type="bigint" autoIncrement="true" startWith="1050">
+            <column name="id" type="bigint">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="login" type="varchar(50)">
@@ -80,9 +80,6 @@
                   separator=";"
                   tableName="jhi_user"
                   usePreparedStatements="true">
-            <column name="id" type="numeric"/>
-            <column name="activated" type="boolean"/>
-            <column name="created_date" type="timestamp"/>
         </loadData>
         <dropDefaultValue tableName="jhi_user" columnName="created_date" columnDataType="${datetimeType}"/>
         <loadData
@@ -90,20 +87,18 @@
                   separator=";"
                   tableName="jhi_authority"
                   usePreparedStatements="true">
-            <column name="name" type="string"/>
         </loadData>
         <loadData
                   file="config/liquibase/data/user_authority.csv"
                   separator=";"
                   tableName="jhi_user_authority"
                   usePreparedStatements="true">
-            <column name="user_id" type="numeric"/>
         </loadData>
     </changeSet>
 
     <changeSet author="jhipster" id="00000000000002" context="test">
         <createTable tableName="jhi_date_time_wrapper">
-            <column autoIncrement="true" name="id" type="BIGINT">
+            <column name="id" type="BIGINT">
                 <constraints primaryKey="true" primaryKeyName="jhi_date_time_wrapperPK"/>
             </column>
             <column name="instant" type="timestamp"/>
